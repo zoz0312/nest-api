@@ -40,7 +40,7 @@ export class MoviesController {
 
     @Delete('/:id')
     remove (@Param('id') movieId:string) {
-        return this.moviesService.deleteOne(id);
+        return this.moviesService.deleteOne(movieId);
     }
 
     @Patch('/:id')
